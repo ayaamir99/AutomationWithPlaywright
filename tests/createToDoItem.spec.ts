@@ -12,6 +12,7 @@ test.describe("ToDo Page",()=>{
 
         await page.locator('[data-testid="add"]').click();
         await page.locator('[data-testid="new-todo"]').fill("selenium");
+       // await page.pause();
 
         await page.locator('[data-testid="submit-newTask"]').click();
 
