@@ -8,7 +8,7 @@ const test = base.extend({
     }
     //call back function => use
     ,authenticatedUser : [async({page,testData},use)=>{
-    await page.goto("10.10.0.18");
+    await page.goto("https://binaryville.com/");
     const emailInput = page.getByRole("textbox",{name:"Email"});
     await emailInput.fill(testData.email)
      const passwordInput = page.getByRole("textbox",{name:"Password"});
